@@ -1,1 +1,101 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8gh2cog442h8"]
 
+[ext_resource type="Script" uid="uid://cfv0glorj03ft" path="res://Arquivos/Scripts/final.gd" id="1_54qwf"]
+[ext_resource type="Texture2D" uid="uid://m2pqdspmywko" path="res://Arquivos/Assets/Sprites/Menu/star_background.jpg" id="1_qh2ox"]
+[ext_resource type="Theme" uid="uid://ms6f7fbklijr" path="res://Arquivos/Assets/Themes/MyTheme.tres" id="2_54qwf"]
+
+[node name="Final" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_54qwf")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -484.0
+offset_top = -280.0
+offset_right = 484.0
+offset_bottom = 280.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_qh2ox")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Panel" type="PanelContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/Panel"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Spacer" type="VBoxContainer" parent="MarginContainer/Panel/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="MarginContainer/Panel/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("2_54qwf")
+text = "Parabéns, você chegou ao fim do jogo!"
+
+[node name="Spacer2" type="VBoxContainer" parent="MarginContainer/Panel/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label2" type="Label" parent="MarginContainer/Panel/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Após o sonho da Lina, em que ela conversou com seus sentimentos
+ e problemas profundos, ela foi capaz de resolver suas fustrações e
+ansiedades. Esperamos que você, jogador(a), assim como a Lina,
+possa ser capaz de superar e entender também seus receios,
+sabendo que há algo ou alguém muito maior lhe esperando
+no fim da jornada."
+
+[node name="Spacer3" type="VBoxContainer" parent="MarginContainer/Panel/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="MarginContainer/Panel/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("2_54qwf")
+text = "Menu Principal"
+
+[node name="Spacer5" type="VBoxContainer" parent="MarginContainer/Panel/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Spacer4" type="VBoxContainer" parent="MarginContainer/Panel/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="MarginContainer/Panel/HBoxContainer/VBoxContainer2/Button" to="." method="_on_button_pressed"]

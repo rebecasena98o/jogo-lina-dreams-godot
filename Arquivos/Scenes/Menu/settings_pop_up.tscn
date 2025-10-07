@@ -1,0 +1,85 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6g7bk0kvgcsc"]
+
+[ext_resource type="Theme" uid="uid://ms6f7fbklijr" path="res://Arquivos/Assets/Themes/MyTheme.tres" id="1_j7cig"]
+[ext_resource type="Script" uid="uid://drdqb7yt6kugj" path="res://Arquivos/Scripts/settings_pop_up.gd" id="1_u4hh2"]
+[ext_resource type="Texture2D" uid="uid://dmxwoc8be1p8y" path="res://Arquivos/Assets/Sprites/Menu/Close.png" id="3_u4hh2"]
+
+[node name="SettingsPopUp" type="PanelContainer"]
+self_modulate = Color(0.628985, 0.037345, 0.595912, 0.956863)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u4hh2")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 2
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Panel/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(620, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("1_j7cig")
+theme_override_font_sizes/font_size = 60
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/MarginContainer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_j7cig")
+theme_override_font_sizes/font_size = 40
+text = "Volume Principal:"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="HSlider" type="HSlider" parent="Panel/MarginContainer/HBoxContainer/VBoxContainer2/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Panel/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="Button Close" type="TextureButton" parent="Panel/MarginContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture_normal = ExtResource("3_u4hh2")
+stretch_mode = 0
+
+[connection signal="drag_ended" from="Panel/MarginContainer/HBoxContainer/VBoxContainer2/HBoxContainer/VBoxContainer/HSlider" to="." method="_on_h_slider_drag_ended"]
+[connection signal="pressed" from="Panel/MarginContainer/HBoxContainer/VBoxContainer3/HBoxContainer/Button Close" to="." method="_on_button_close_pressed"]
