@@ -1,1 +1,783 @@
+[gd_scene load_steps=27 format=3 uid="uid://brxeuqg8stjvf"]
 
+[ext_resource type="Script" uid="uid://bge5mpct1vhhl" path="res://Arquivos/Scripts/cutscene.gd" id="1_ktgdn"]
+[ext_resource type="Texture2D" uid="uid://rvk2fyak1gwl" path="res://Arquivos/Assets/Sprites/Level1/Sprite-0005-Sheet.png" id="1_l8upr"]
+[ext_resource type="Theme" uid="uid://ms6f7fbklijr" path="res://Arquivos/Assets/Themes/MyTheme.tres" id="2_3lcnx"]
+[ext_resource type="AudioStream" uid="uid://17p57b2svmj2" path="res://Arquivos/Assets/Audio/Music_theme_house.wav" id="4_puias"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3lcnx"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(0, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ktgdn"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(200, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_puias"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(400, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6qc52"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(600, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hc6a"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(800, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rj8dm"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(1000, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qjjdi"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(1200, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jc01p"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(1400, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_02g1h"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(1600, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mdo07"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(1800, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hunyl"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(2000, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d3ju0"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(2200, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfvnj"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(2400, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1woac"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(2600, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8llo"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(2800, 0, 200, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8ffo"]
+atlas = ExtResource("1_l8upr")
+region = Rect2(3000, 0, 200, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m218k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3lcnx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ktgdn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_puias")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6qc52")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6hc6a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rj8dm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qjjdi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jc01p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_02g1h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdo07")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hunyl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d3ju0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wfvnj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1woac")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8llo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e8ffo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ktgdn"]
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+shadow_color = Color(0.0926804, 0.0731588, 0.0731588, 0.917647)
+shadow_size = 5
+shadow_offset = Vector2(-5, 5)
+
+[sub_resource type="Theme" id="Theme_ktgdn"]
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_ktgdn")
+
+[sub_resource type="Animation" id="Animation_ktgdn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dialogo/Fala/VBoxContainer/Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [""]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Dialogo/Fala/VBoxContainer/RichTextLabel:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [""]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Dialogo/Fala:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Dialogo/Fala/VBoxContainer/Label:visible_ratio")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Dialogo/Fala/VBoxContainer/RichTextLabel:visible_ratio")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Dialogo/Fala2:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Dialogo/Fala3:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Dialogo/Fala4:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Dialogo/Fala5:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Dialogo/Fala3/VBoxContainer/Label:visible_ratio")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Dialogo/Fala3/VBoxContainer/RichTextLabel:visible_ratio")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Dialogo/Fala2/VBoxContainer/Label:visible_ratio")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Dialogo/Fala2/VBoxContainer/RichTextLabel:visible_ratio")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Dialogo/Fala4/VBoxContainer/Label:visible_ratio")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Dialogo/Fala4/VBoxContainer/RichTextLabel:visible_ratio")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Dialogo/Fala5/VBoxContainer/Label:visible_ratio")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Dialogo/Fala5/VBoxContainer/RichTextLabel:visible_ratio")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath(".:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_3lcnx"]
+resource_name = "dialogue"
+length = 12.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dialogo/Fala/VBoxContainer/Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.73333, 2.46667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": ["", "  Lina"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Dialogo/Fala/VBoxContainer/RichTextLabel:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.73333, 2.46667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": ["", "Chegueiii! Boa noite mãe - rapidamente, Lina vai para a entrada do corredor -"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Dialogo/Fala:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.73333, 2.03333, 11.1, 12.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Dialogo/Fala/VBoxContainer/Label:visible_ratio")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(2.33667, 2.76667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Dialogo/Fala/VBoxContainer/RichTextLabel:visible_ratio")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(2.33667, 2.76667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Dialogo/Fala2:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1.73333, 5.05333, 5.35333, 11.1333, 12.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Dialogo/Fala3:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(1.73333, 3.16333, 3.46333, 11.1333, 12.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Dialogo/Fala4:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(1.73333, 6.71182, 7.01182, 11.1333, 12.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Dialogo/Fala5:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(1.73333, 8.57353, 8.87354, 11.1, 12.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Dialogo/Fala3/VBoxContainer/Label:visible_ratio")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(3.63333, 3.83333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Dialogo/Fala3/VBoxContainer/RichTextLabel:visible_ratio")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(3.96667, 4.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Dialogo/Fala2/VBoxContainer/Label:visible_ratio")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(5.36667, 5.56667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Dialogo/Fala2/VBoxContainer/RichTextLabel:visible_ratio")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(5.59333, 6.12667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Dialogo/Fala4/VBoxContainer/Label:visible_ratio")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(7.13333, 7.33333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Dialogo/Fala4/VBoxContainer/RichTextLabel:visible_ratio")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(7.33333, 7.86667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Dialogo/Fala5/VBoxContainer/Label:visible_ratio")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(8.93333, 9.13333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Dialogo/Fala5/VBoxContainer/RichTextLabel:visible_ratio")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(9.14333, 9.67667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/17/type = "method"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath(".")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(3.16667, 4.76667, 6.6, 8.5, 9.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"values": [{
+"args": [],
+"method": &"pause"
+}, {
+"args": [],
+"method": &"pause"
+}, {
+"args": [],
+"method": &"pause"
+}, {
+"args": [],
+"method": &"pause"
+}, {
+"args": [],
+"method": &"pause"
+}]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath(".:modulate")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 1.27, 11.11, 12.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_puias"]
+_data = {
+&"RESET": SubResource("Animation_ktgdn"),
+&"dialogue": SubResource("Animation_3lcnx")
+}
+
+[node name="Cutscene" type="Node2D" node_paths=PackedStringArray("animation_player")]
+modulate = Color(1, 1, 1, 0)
+script = ExtResource("1_ktgdn")
+animation_player = NodePath("AnimationPlayer")
+
+[node name="Background" type="AnimatedSprite2D" parent="."]
+position = Vector2(-45, 1)
+scale = Vector2(6.18, 7.24)
+sprite_frames = SubResource("SpriteFrames_m218k")
+autoplay = "default"
+centered = false
+
+[node name="Dialogo" type="Node" parent="."]
+
+[node name="Fala" type="PanelContainer" parent="Dialogo"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(400, 120)
+offset_left = 40.0
+offset_top = 80.0
+offset_right = 440.0
+offset_bottom = 200.0
+theme = SubResource("Theme_ktgdn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Dialogo/Fala"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Dialogo/Fala/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_3lcnx")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 30
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Dialogo/Fala/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Fala2" type="PanelContainer" parent="Dialogo"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(400, 120)
+offset_left = 40.0
+offset_top = 280.0
+offset_right = 440.0
+offset_bottom = 400.0
+theme = SubResource("Theme_ktgdn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Dialogo/Fala2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Dialogo/Fala2/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_3lcnx")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 30
+text = "  Lina"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Dialogo/Fala2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Não estou com fome, boa noite e tchau."
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Fala3" type="PanelContainer" parent="Dialogo"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(400, 120)
+offset_left = 670.0
+offset_top = 180.0
+offset_right = 1070.0
+offset_bottom = 300.0
+theme = SubResource("Theme_ktgdn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Dialogo/Fala3"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Dialogo/Fala3/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_3lcnx")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 30
+text = "  Mãe"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Dialogo/Fala3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Mas filha, e o jantar? Não vai nem comer depois de chegar da escola?"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Fala4" type="PanelContainer" parent="Dialogo"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(400, 120)
+offset_left = 670.0
+offset_top = 380.0
+offset_right = 1070.0
+offset_bottom = 500.0
+theme = SubResource("Theme_ktgdn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Dialogo/Fala4"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Dialogo/Fala4/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_3lcnx")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 30
+text = "  Lina"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Dialogo/Fala4/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Mas, filha!"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Fala5" type="PanelContainer" parent="Dialogo"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(400, 120)
+offset_left = 40.0
+offset_top = 480.0
+offset_right = 440.0
+offset_bottom = 600.0
+theme = SubResource("Theme_ktgdn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Dialogo/Fala5"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Dialogo/Fala5/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_3lcnx")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 30
+text = "  Lina"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Dialogo/Fala5/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Aff, não enche mãe !"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_puias")
+}
+autoplay = "dialogue"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_puias")
+autoplay = true
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]

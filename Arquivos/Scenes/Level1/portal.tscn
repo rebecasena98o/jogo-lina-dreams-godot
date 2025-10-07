@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxntd40yxumon"]
+
+[ext_resource type="Script" uid="uid://ccvd3x72g88pl" path="res://Arquivos/Scripts/portal.gd" id="1_wtrt4"]
+
+[node name="Portal" type="Area2D"]
+script = ExtResource("1_wtrt4")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

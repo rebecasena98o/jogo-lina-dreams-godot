@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://eien1oa67xn3"]
+
+[ext_resource type="Script" uid="uid://bg1xxcmp5jw7d" path="res://Arquivos/Scripts/porta.gd" id="1_umn72"]
+[ext_resource type="Texture2D" uid="uid://bo2t7ck3rr5u" path="res://Arquivos/Assets/Sprites/Level1/Idle.png" id="2_gvjdb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_72550"]
+size = Vector2(45, 57)
+
+[node name="Porta" type="Area2D"]
+script = ExtResource("1_umn72")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_gvjdb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_72550")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -69.0
+offset_top = -52.0
+offset_right = 248.0
+offset_bottom = -8.0
+theme_override_font_sizes/font_size = 15
+text = "Aperte \"E\" para entrar"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
