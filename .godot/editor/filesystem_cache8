@@ -1,0 +1,110 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1746820530
+icon.svg::CompressedTexture2D::3347681167830266156::1744390004::1747000734::1::::<><>::
+::res://Arquivos/::1746809084
+::res://Arquivos/Assets/::1746809084
+::res://Arquivos/Assets/Audio/::1746811318
+jump.wav::AudioStreamWAV::3404771156169259057::1745599352::1747000744::1::::<><>::
+Main Menu Theme.mp3::AudioStreamMP3::3530062178368007073::1746497810::1747000726::1::::<><>::
+MusicThemeBoss.wav::AudioStreamWAV::2898425723288575635::1746810330::1747000746::1::::<><>::
+Music_theme_house.wav::AudioStreamWAV::1891936034971057765::1746810916::1747000744::1::::<><>::
+::res://Arquivos/Assets/Fonts/::1746809084
+AncientModernTales-a7Po.ttf::FontFile::4081368332702289172::1744398972::1747000726::1::::<><>::
+::res://Arquivos/Assets/Sprites/::1746809084
+::res://Arquivos/Assets/Sprites/Level1/::1746809084
+32x32GridItemsAll.png::CompressedTexture2D::7613480076238651281::1742693358::1747000736::1::::<><>::
+DialogueBox.png::CompressedTexture2D::5222967761922221971::1746382700::1747000734::1::::<><>::
+Idle.png::CompressedTexture2D::100765105413030748::1571103862::1747000734::1::::<><>::
+Sprite-0005-Sheet.png::CompressedTexture2D::1237217960751352319::1746344702::1747000736::1::::<><>::
+Terrain (32x32).png::CompressedTexture2D::6908694626109190271::1571142644::1747000736::1::::<><>::
+::res://Arquivos/Assets/Sprites/Level2/::1746809084
+BG1.png::CompressedTexture2D::6419732109605713174::1585218072::1747000728::1::::<><>::
+BG2.png::CompressedTexture2D::5223081023058049547::1585218076::1747000728::1::::<><>::
+BG3.png::CompressedTexture2D::2090545611966886196::1585218082::1747000728::1::::<><>::
+buttom.png::CompressedTexture2D::5017574169715826351::1590698194::1747000728::1::::<><>::
+buttom_pressed.png::CompressedTexture2D::3990091237943445106::1590698202::1747000730::1::::<><>::
+Decors.png::CompressedTexture2D::7292203796934038035::1585218140::1747000732::1::::<><>::
+ExampleTiles.png::CompressedTexture2D::1004041576795412439::1585218450::1747000732::1::::<><>::
+Scaffolding_and_BG_Parts (16 x 16).png::CompressedTexture2D::6084759336945870524::1744397828::1747000732::1::::<><>::
+Sprite-0007.png::CompressedTexture2D::1674061602540591720::1746791490::1747000730::1::::<><>::
+Sprite-0008-Sheet.png::CompressedTexture2D::6043245459741590878::1746791186::1747000732::1::::<><>::
+Sprite-0009.png::CompressedTexture2D::3533068189826677991::1746791484::1747000732::1::::<><>::
+Tileset.png::CompressedTexture2D::4294993823942454054::1585218052::1747000734::1::::<><>::
+::res://Arquivos/Assets/Sprites/Level2/3 - Princess Sera/::1746809084
+Angry_(Dressed) (16 x 32).png::CompressedTexture2D::7802547122120462343::1592234844::1747000738::1::::<><>::
+Dress (16 x 16).png::CompressedTexture2D::4357328428392830374::1592235026::1747000738::1::::<><>::
+Falling (16 x 32).png::CompressedTexture2D::5362664763580451271::1592235268::1747000738::1::::<><>::
+Hurt (16 x 32).png::CompressedTexture2D::7296777953429159099::1592235178::1747000738::1::::<><>::
+Idle (16 x 32).png::CompressedTexture2D::6872378760833297135::1592235140::1747000738::1::::<><>::
+Idle_(Dressed) (16 x 32).png::CompressedTexture2D::8611464045255503204::1592234680::1747000740::1::::<><>::
+Jumping (16 x 32).png::CompressedTexture2D::6753231492836839946::1592235222::1747000740::1::::<><>::
+Jumping_&_Falling_(Dressed) (16 x 32).png::CompressedTexture2D::1793088400903496449::1592234778::1747000740::1::::<><>::
+Projectile_Bubble (8 x 8).png::CompressedTexture2D::3348854048116621116::1592235630::1747000740::1::::<><>::
+Projectile_Explosion (8 x 8).png::CompressedTexture2D::6777445347907065879::1592235720::1747000742::1::::<><>::
+Removing_Dress (16 x 32).png::CompressedTexture2D::6039756144831591907::1592234976::1747000740::1::::<><>::
+Running (16 x 32).png::CompressedTexture2D::8484133612203413427::1592235306::1747000742::1::::<><>::
+Shooting_Projectile_Jumping (16 x 32).png::CompressedTexture2D::9163268416590918115::1592235530::1747000742::1::::<><>::
+Shooting_Projectile_Running (16 x 32).png::CompressedTexture2D::56073545205164540::1592235582::1747000742::1::::<><>::
+Shooting_Projectile_Standing (16 x 32).png::CompressedTexture2D::5400012647421724955::1592235490::1747000728::1::::<><>::
+Sprite-0001.png::CompressedTexture2D::4790735130010659455::1746214888::1747000728::1::::<><>::
+Sprite-0002.png::CompressedTexture2D::6553067284133894893::1746214882::1747000728::1::::<><>::
+Victory_Pose (16 x 32).png::CompressedTexture2D::3579532052494779506::1592235376::1747000728::1::::<><>::
+Walking_(Dressed) (16 x 32).png::CompressedTexture2D::75177219186785444::1592234724::1747000728::1::::<><>::
+::res://Arquivos/Assets/Sprites/Menu/::1746809084
+05.png::CompressedTexture2D::2254534510143296107::1744397176::1747000732::1::::<><>::
+Close.png::CompressedTexture2D::8050369794111664550::1565648174::1747000734::1::::<><>::
+star_background.jpg::CompressedTexture2D::898943836685044250::1745561718::1747000736::1::::<><>::
+::res://Arquivos/Assets/Themes/::1746820580
+MyTheme.tres::Theme::881317767505216827::1747000910::0::1::::<><>::uid://byfbsmn3ge18k::::res://Arquivos/Assets/Fonts/AncientModernTales-a7Po.ttf
+::res://Arquivos/Scenes/::1746809084
+::res://Arquivos/Scenes/Leve1/::1746820604
+cutscene.tscn::PackedScene::3627391148898799947::1747000912::0::1::::<><>::res://Arquivos/Scripts/cutscene.gd<>uid://rvk2fyak1gwl::::res://Arquivos/Assets/Sprites/Level1/Sprite-0005-Sheet.png<>uid://ms6f7fbklijr::::res://Arquivos/Assets/Themes/MyTheme.tres<>uid://17p57b2svmj2::::res://Arquivos/Assets/Audio/Music_theme_house.wav
+level_1.tscn::PackedScene::5344331575315853084::1747000914::0::1::::<><>::res://Arquivos/Scripts/level_1.gd<>uid://c5ovgq60lnqu6::::res://Arquivos/Assets/Sprites/Level1/Terrain (32x32).png<>uid://do1xd5k0sxjux::::res://Arquivos/Scenes/Level2/player.tscn<>uid://dgqa50u7lovxp::::res://Arquivos/Assets/Sprites/Level1/32x32GridItemsAll.png<>uid://eien1oa67xn3::::res://Arquivos/Scenes/Leve1/porta.tscn<>uid://17p57b2svmj2::::res://Arquivos/Assets/Audio/Music_theme_house.wav
+level_1_1.tscn::PackedScene::1121126925342577268::1747000916::0::1::::<><>::uid://c5ovgq60lnqu6::::res://Arquivos/Assets/Sprites/Level1/Terrain (32x32).png<>res://Arquivos/Scripts/level_1_1.gd<>uid://dgqa50u7lovxp::::res://Arquivos/Assets/Sprites/Level1/32x32GridItemsAll.png<>uid://cxntd40yxumon::::res://Arquivos/Scenes/Leve1/portal.tscn<>uid://do1xd5k0sxjux::::res://Arquivos/Scenes/Level2/player.tscn<>uid://17p57b2svmj2::::res://Arquivos/Assets/Audio/Music_theme_house.wav
+porta.tscn::PackedScene::297537867153514018::1747000916::0::1::::<><>::res://Arquivos/Scripts/porta.gd<>uid://bo2t7ck3rr5u::::res://Arquivos/Assets/Sprites/Level1/Idle.png
+portal.tscn::PackedScene::6415182225027252457::1747000916::0::1::::<><>::res://Arquivos/Scripts/portal.gd
+::res://Arquivos/Scenes/Level2/::1746820604
+button2.tscn::PackedScene::6731311657743286077::1746214524::0::1::::<><>::uid://c0w53u57cdch8::::res://Arquivos/Scripts/button_2.gd<>uid://bw33hqaigbq7k::::res://Arquivos/Assets/Sprites/Level2/buttom_pressed.png<>uid://cdqsyi2lxajsx::::res://Arquivos/Assets/Sprites/Level2/buttom.png
+button.tscn::PackedScene::6231179850927145445::1746214524::0::1::::<><>::uid://dd0ve33vitalw::::res://Arquivos/Scripts/button.gd<>uid://bw33hqaigbq7k::::res://Arquivos/Assets/Sprites/Level2/buttom_pressed.png<>uid://cdqsyi2lxajsx::::res://Arquivos/Assets/Sprites/Level2/buttom.png
+button_3.tscn::PackedScene::8764004813534793050::1746214524::0::1::::<><>::uid://cf6res6kuikcp::::res://Arquivos/Scripts/button_3.gd<>uid://bw33hqaigbq7k::::res://Arquivos/Assets/Sprites/Level2/buttom_pressed.png<>uid://cdqsyi2lxajsx::::res://Arquivos/Assets/Sprites/Level2/buttom.png
+button_4.tscn::PackedScene::4078073214505920739::1746802042::0::1::::<><>::uid://cdqsyi2lxajsx::::res://Arquivos/Assets/Sprites/Level2/buttom.png<>uid://bc753p4l2fbyg::::res://Arquivos/Scripts/button_4.gd<>uid://bw33hqaigbq7k::::res://Arquivos/Assets/Sprites/Level2/buttom_pressed.png
+cutscene_boss.tscn::PackedScene::368185148908964990::1747000912::0::1::::<><>::uid://csdnmtqllueio::::res://Arquivos/Assets/Sprites/Level2/Sprite-0008-Sheet.png<>uid://x36sx2uw6wlc::::res://Arquivos/Assets/Sprites/Level2/Sprite-0007.png<>res://Arquivos/Scripts/cutscene_boss.gd<>uid://c0mmcch5r1vur::::res://Arquivos/Assets/Sprites/Level2/3 - Princess Sera/Sprite-0002.png<>uid://ms6f7fbklijr::::res://Arquivos/Assets/Themes/MyTheme.tres<>uid://bhkawbk0ltn44::::res://Arquivos/Assets/Audio/MusicThemeBoss.wav
+death_zone.tscn::PackedScene::6655445530563619085::1746478702::0::1::::<><>::uid://4qu7rr7v4h8v::::res://Arquivos/Scripts/death_zone.gd
+lawei.gd::GDScript::-1::1746804566::0::1::::<>Area2D<>::
+lawei.tscn::PackedScene::2765615592894530771::1746792914::0::1::::<><>::uid://bqlpd8et8be76::::res://Arquivos/Assets/Sprites/Level2/Sprite-0009.png<>uid://dk36lns2pparf::::res://Arquivos/Scenes/Level2/lawei.gd
+level_2.tscn::PackedScene::6316693008744973587::1746798242::0::1::::<><>::uid://krqjb7balogl::::res://Arquivos/Scripts/level_2.gd<>uid://ce8257msoe1gc::::res://Arquivos/Scenes/Level2/resources/level_2_tileset.tres<>uid://7ehsxmsma03a::::res://Arquivos/Scenes/Level2/Pilar.tscn<>uid://cxp1bxxxltr0y::::res://Arquivos/Assets/Sprites/Level2/BG1.png<>uid://do1xd5k0sxjux::::res://Arquivos/Scenes/Level2/player.tscn<>uid://cu1ove0tumwj2::::res://Arquivos/Scenes/Level2/button.tscn<>uid://cgodm73rfvr20::::res://Arquivos/Assets/Sprites/Level2/BG2.png<>uid://c25xyp2blyrub::::res://Arquivos/Scenes/Level2/button2.tscn<>uid://41w8l2h0qlke::::res://Arquivos/Assets/Sprites/Level2/BG3.png<>uid://dw4l44686mk87::::res://Arquivos/Scenes/Level2/button_3.tscn<>uid://dig7kwaei7ttm::::res://Arquivos/Scenes/Level2/plataforma.tscn<>uid://c127hlevjv4yr::::res://Arquivos/Scenes/Level2/death_zone.tscn<>uid://eien1oa67xn3::::res://Arquivos/Scenes/Leve1/porta.tscn
+level_2_1.tscn::PackedScene::2556178943573966048::1747000912::0::1::::<><>::res://Arquivos/Scripts/level_2_1.gd<>uid://ce8257msoe1gc::::res://Arquivos/Scenes/Level2/resources/level_2_tileset.tres<>uid://bfnxjxf7laib8::::res://Arquivos/Scenes/Level2/lawei.tscn<>uid://do1xd5k0sxjux::::res://Arquivos/Scenes/Level2/player.tscn<>uid://eien1oa67xn3::::res://Arquivos/Scenes/Leve1/porta.tscn
+Pilar.tscn::PackedScene::2254758898081538588::1746214524::0::1::::<><>::uid://ce8257msoe1gc::::res://Arquivos/Scenes/Level2/resources/level_2_tileset.tres
+plataforma.tscn::PackedScene::7735121024122912606::1746800538::0::1::::<><>::uid://ce8257msoe1gc::::res://Arquivos/Scenes/Level2/resources/level_2_tileset.tres
+player.tscn::PackedScene::8196983124142057307::1746811628::0::1::::<><>::uid://b3hognbo260ci::::res://Arquivos/Scripts/player.gd<>uid://c0mmcch5r1vur::::res://Arquivos/Assets/Sprites/Level2/3 - Princess Sera/Sprite-0002.png<>uid://caiwycbyls7lj::::res://Arquivos/Assets/Sprites/Level2/3 - Princess Sera/Sprite-0001.png<>uid://borkc3r3qed3n::::res://Arquivos/Assets/Audio/jump.wav
+::res://Arquivos/Scenes/Level2/resources/::1746820580
+level_2_tileset.tres::TileSet::5123415840565737078::1747000910::0::1::::<><>::uid://b2gr6kodjx7ws::::res://Arquivos/Assets/Sprites/Level2/Tileset.png<>uid://db5nsb8t0ca7t::::res://Arquivos/Assets/Sprites/Level2/Decors.png<>uid://csxrdkpxq0raq::::res://Arquivos/Assets/Sprites/Level2/Scaffolding_and_BG_Parts (16 x 16).png
+::res://Arquivos/Scenes/Level3/::1746820604
+cutscene_final.tscn::PackedScene::2602466858108177036::1747000914::0::1::::<><>::res://Arquivos/Scripts/cutscene_final.gd<>uid://rvk2fyak1gwl::::res://Arquivos/Assets/Sprites/Level1/Sprite-0005-Sheet.png<>uid://ms6f7fbklijr::::res://Arquivos/Assets/Themes/MyTheme.tres
+level_3.tscn::PackedScene::480570488540172134::1747000910::0::1::::<><>::res://Arquivos/Scripts/level_3.gd<>uid://ce8257msoe1gc::::res://Arquivos/Scenes/Level2/resources/level_2_tileset.tres<>uid://cxp1bxxxltr0y::::res://Arquivos/Assets/Sprites/Level2/BG1.png<>uid://cgodm73rfvr20::::res://Arquivos/Assets/Sprites/Level2/BG2.png<>uid://41w8l2h0qlke::::res://Arquivos/Assets/Sprites/Level2/BG3.png<>uid://do1xd5k0sxjux::::res://Arquivos/Scenes/Level2/player.tscn<>uid://eien1oa67xn3::::res://Arquivos/Scenes/Leve1/porta.tscn<>uid://dig7kwaei7ttm::::res://Arquivos/Scenes/Level2/plataforma.tscn<>uid://7ehsxmsma03a::::res://Arquivos/Scenes/Level2/Pilar.tscn<>uid://bydpjgfhoiyjr::::res://Arquivos/Scenes/Level2/button_4.tscn<>uid://c127hlevjv4yr::::res://Arquivos/Scenes/Level2/death_zone.tscn
+::res://Arquivos/Scenes/Menu/::1746820604
+final.tscn::PackedScene::7101932836336926579::1747000910::0::1::::<><>::res://Arquivos/Scripts/final.gd<>uid://m2pqdspmywko::::res://Arquivos/Assets/Sprites/Menu/star_background.jpg<>uid://ms6f7fbklijr::::res://Arquivos/Assets/Themes/MyTheme.tres
+main_menu.tscn::PackedScene::940988162148778718::1747000918::0::1::::<><>::res://Arquivos/Scripts/main_menu.gd<>uid://ms6f7fbklijr::::res://Arquivos/Assets/Themes/MyTheme.tres<>uid://bqj8uxh1glcvx::::res://Arquivos/Assets/Audio/Main Menu Theme.mp3<>uid://m2pqdspmywko::::res://Arquivos/Assets/Sprites/Menu/star_background.jpg
+settings_pop_up.tscn::PackedScene::6963027080588264302::1746788532::0::1::::<><>::uid://ms6f7fbklijr::::res://Arquivos/Assets/Themes/MyTheme.tres<>uid://drdqb7yt6kugj::::res://Arquivos/Scripts/settings_pop_up.gd<>uid://dmxwoc8be1p8y::::res://Arquivos/Assets/Sprites/Menu/Close.png
+::res://Arquivos/Scenes/Shared/::1745601454
+::res://Arquivos/Scripts/::1746814002
+button.gd::GDScript::-1::1746212384::0::1::::<>Area2D<>::
+button_2.gd::GDScript::-1::1746212874::0::1::::<>Area2D<>::
+button_3.gd::GDScript::-1::1746213508::0::1::::<>Area2D<>::
+button_4.gd::GDScript::-1::1746801714::0::1::::<>Area2D<>::
+cutscene.gd::GDScript::-1::1746811756::0::1::::<>Node2D<>::
+cutscene_boss.gd::GDScript::-1::1746814002::0::1::::<>Node2D<>::
+cutscene_final.gd::GDScript::-1::1746805156::0::1::::<>Node2D<>::
+dados_globais.gd::GDScript::-1::1746208890::0::1::::<>Node<>::
+death_zone.gd::GDScript::-1::1746478434::0::1::::<>Area2D<>::
+final.gd::GDScript::-1::1746804210::0::1::::<>Control<>::
+level_1.gd::GDScript::-1::1746811474::0::1::::<>Node2D<>::
+level_1_1.gd::GDScript::-1::1746811616::0::1::::<>Node2D<>::
+level_2.gd::GDScript::-1::1746793070::0::1::::<>Node2D<>::
+level_2_1.gd::GDScript::-1::1746810832::0::1::::<>Node2D<>::
+level_3.gd::GDScript::-1::1746804388::0::1::::<>Node2D<>::
+main_menu.gd::GDScript::-1::1746790758::0::1::::<>CanvasLayer<>::
+player.gd::GDScript::-1::1746811196::0::1::::<>CharacterBody2D<>::
+porta.gd::GDScript::-1::1746344284::0::1::::<>Area2D<>::
+portal.gd::GDScript::-1::1746790066::0::1::::<>Area2D<>::
+settings_pop_up.gd::GDScript::-1::1746208996::0::1::::<>PanelContainer<>::

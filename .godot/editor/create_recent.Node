@@ -1,0 +1,14 @@
+Node
+AudioStreamPlayer2D
+Node2D
+AnimationPlayer
+AnimatedSprite2D
+Label
+Sprite2D
+TileMapLayer
+CollisionShape2D
+RichTextLabel
+HBoxContainer
+VBoxContainer
+ColorRect
+Button
