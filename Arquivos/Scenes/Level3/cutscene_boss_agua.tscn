@@ -1,1 +1,499 @@
+[gd_scene load_steps=25 format=3 uid="uid://bbxqftao65xxq"]
 
+[ext_resource type="Script" uid="uid://k6lk44yp0mw7" path="res://Arquivos/Scripts/cutscene_boss_agua.gd" id="1_k2dyg"]
+[ext_resource type="Texture2D" uid="uid://cdtct2ftsxgid" path="res://Arquivos/Assets/Sprites/Level3/Cenário Boss Agua.png" id="2_y8bfq"]
+[ext_resource type="Texture2D" uid="uid://c6own4nugd1if" path="res://Arquivos/Assets/Sprites/Level3/Sprite-0010.png" id="3_yxufc"]
+[ext_resource type="Texture2D" uid="uid://c0mmcch5r1vur" path="res://Arquivos/Assets/Sprites/Level2/3 - Princess Sera/Sprite-0002.png" id="4_ot6cb"]
+[ext_resource type="Theme" uid="uid://iil1glro86vy" path="res://Arquivos/Scenes/Level2/resources/dialogue.tres" id="5_15vc4"]
+[ext_resource type="PackedScene" uid="uid://bstjimodsbuje" path="res://Arquivos/Scenes/Level2/opcoes.tscn" id="5_xx5c5"]
+[ext_resource type="Theme" uid="uid://ms6f7fbklijr" path="res://Arquivos/Assets/Themes/MyTheme.tres" id="6_xty30"]
+[ext_resource type="AudioStream" uid="uid://bhkawbk0ltn44" path="res://Arquivos/Assets/Audio/MusicThemeBoss.wav" id="8_15vc4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v4cdm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_y8bfq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_15vc4"]
+atlas = ExtResource("3_yxufc")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xty30"]
+atlas = ExtResource("3_yxufc")
+region = Rect2(48, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xxhwp"]
+atlas = ExtResource("3_yxufc")
+region = Rect2(0, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2yjw3"]
+atlas = ExtResource("3_yxufc")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7lt2s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_15vc4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xty30")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xxhwp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2yjw3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83aeg"]
+atlas = ExtResource("4_ot6cb")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xkce"]
+atlas = ExtResource("4_ot6cb")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qge3c"]
+atlas = ExtResource("4_ot6cb")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vyfyi"]
+atlas = ExtResource("4_ot6cb")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8onr4"]
+atlas = ExtResource("4_ot6cb")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4e8b"]
+atlas = ExtResource("4_ot6cb")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ndq1q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83aeg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xkce")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qge3c")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vyfyi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8onr4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vyfyi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e4e8b")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_xx5c5"]
+resource_name = "dialogue"
+length = 50.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Player:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.02),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-164, 520), Vector2(371, 520)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Player:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3.08),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"right", &"idle"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Dialogo/Lina:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 3.17),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Dialogo/Boss:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(6.83333, 8.03333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Dialogo/Lina/VBoxContainer/Label:visible_ratio")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(3.31, 4.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Dialogo/Lina/VBoxContainer/TextoLina:visible_ratio")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(4.32, 6.25, 10.3333, 10.5667, 10.8, 11.4667, 13.4333, 13.7, 14, 14.7667, 16.9333, 17.2, 17.5333, 18.3333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 1.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Dialogo/Lina/VBoxContainer/TextoLina:text")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(4.24, 10.1667, 10.7, 13.2667, 13.8667, 16.7333, 17.3333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["Ei quem é você?", "", "Sono? Mas por quê? O dia estava tão bonito! E 	aqui parece estar tudo tão... triste!", "", "Aqui está mais para o guarda-roupa da minha mãe quando ela esquece de limpar!", "", "Agora você parece bem mais desperto!"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Dialogo/Boss/VBoxContainer/Label:visible_ratio")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(8.04, 8.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Dialogo/Boss/VBoxContainer/TextoBoss:text")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(8.99, 11.7667, 12.2, 15, 15.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": ["Sou o rei desse lugar... e você está atrapalhando o meu sono profundo.", "", "Essa é a beleza do meu lar! A tristeza e o frio, unidos em um só como um inverno gelado...", "", "Mas que insulto! Nem Aarde foi capaz de dizer algo assim do meu império!"]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Dialogo/Boss/VBoxContainer/TextoBoss:visible_ratio")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(9.04, 9.9, 11.8667, 12.0667, 12.4, 12.9, 15.1667, 15.3667, 15.6333, 16.3667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 1.0]
+}
+tracks/10/type = "method"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath(".")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(6.43333, 10, 11.5667, 13.1, 14.9, 16.4667, 18.4333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"values": [{
+"args": [],
+"method": &"pause"
+}, {
+"args": [],
+"method": &"pause"
+}, {
+"args": [],
+"method": &"pause"
+}, {
+"args": [],
+"method": &"pause"
+}, {
+"args": [],
+"method": &"pause"
+}, {
+"args": [],
+"method": &"pause"
+}, {
+"args": [],
+"method": &"pause"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_15vc4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Player:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-164, 520)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Player:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"right"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Dialogo/Lina:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Dialogo/Boss:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Dialogo/Lina/VBoxContainer/Label:visible_ratio")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Dialogo/Lina/VBoxContainer/TextoLina:visible_ratio")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Dialogo/Lina/VBoxContainer/TextoLina:text")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Ei quem é você?"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Dialogo/Boss/VBoxContainer/Label:visible_ratio")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Dialogo/Boss/VBoxContainer/TextoBoss:text")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Sou o rei desse lugar... e você está atrapalhando o meu sono profundo."]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Dialogo/Boss/VBoxContainer/TextoBoss:visible_ratio")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_15vc4"]
+_data = {
+&"RESET": SubResource("Animation_15vc4"),
+&"dialogue": SubResource("Animation_xx5c5")
+}
+
+[node name="CutsceneBossAgua" type="Node2D"]
+script = ExtResource("1_k2dyg")
+
+[node name="Background" type="AnimatedSprite2D" parent="."]
+position = Vector2(544.75, 363.75)
+scale = Vector2(1.35592, 1.63786)
+sprite_frames = SubResource("SpriteFrames_v4cdm")
+
+[node name="BossAgua" type="AnimatedSprite2D" parent="."]
+position = Vector2(810, 427)
+scale = Vector2(7, 7)
+sprite_frames = SubResource("SpriteFrames_7lt2s")
+autoplay = "default"
+
+[node name="Player" type="AnimatedSprite2D" parent="."]
+position = Vector2(-164, 520)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_ndq1q")
+animation = &"right"
+autoplay = "right"
+
+[node name="Dialogo" type="Node" parent="."]
+
+[node name="Lina" type="PanelContainer" parent="Dialogo"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(400, 120)
+offset_left = 120.0
+offset_top = 330.0
+offset_right = 520.0
+offset_bottom = 450.0
+theme = ExtResource("5_15vc4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Dialogo/Lina"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Dialogo/Lina/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("6_xty30")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 30
+text = "Lina"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="TextoLina" type="RichTextLabel" parent="Dialogo/Lina/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 16
+text = "Ei quem é você?"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Boss" type="PanelContainer" parent="Dialogo"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(400, 120)
+offset_left = 590.0
+offset_top = 131.0
+offset_right = 990.0
+offset_bottom = 251.0
+theme = ExtResource("5_15vc4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Dialogo/Boss"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Dialogo/Boss/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("6_xty30")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 30
+text = "OndarionLord"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="TextoBoss" type="RichTextLabel" parent="Dialogo/Boss/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Sou o rei desse lugar... e você está atrapalhando o meu sono profundo."
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Botoes" type="Node" parent="."]
+
+[node name="Opcoes" parent="Botoes" instance=ExtResource("5_xx5c5")]
+visible = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_15vc4")
+}
+autoplay = "dialogue"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_15vc4")
+autoplay = true
+
+[connection signal="valor" from="Botoes/Opcoes" to="." method="_on_opcoes_valor"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
