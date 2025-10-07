@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://dw4l44686mk87"]
+
+[ext_resource type="Script" uid="uid://cf6res6kuikcp" path="res://Arquivos/Scripts/button_3.gd" id="1_fc36a"]
+[ext_resource type="Texture2D" uid="uid://bw33hqaigbq7k" path="res://Arquivos/Assets/Sprites/Level2/buttom_pressed.png" id="1_nfmeq"]
+[ext_resource type="Texture2D" uid="uid://cdqsyi2lxajsx" path="res://Arquivos/Assets/Sprites/Level2/buttom.png" id="2_fc36a"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m7cdd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nfmeq")
+}],
+"loop": true,
+"name": &"pressed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_fc36a")
+}],
+"loop": true,
+"name": &"released",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v30f1"]
+size = Vector2(16, 3)
+
+[node name="Button3" type="Area2D"]
+script = ExtResource("1_fc36a")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_m7cdd")
+animation = &"pressed"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_v30f1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

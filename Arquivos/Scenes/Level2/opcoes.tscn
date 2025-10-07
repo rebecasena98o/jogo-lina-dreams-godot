@@ -1,0 +1,79 @@
+[gd_scene load_steps=3 format=3 uid="uid://bstjimodsbuje"]
+
+[ext_resource type="Script" uid="uid://g18pfk5ontbs" path="res://Arquivos/Scripts/opcoes.gd" id="1_alb7e"]
+[ext_resource type="Theme" uid="uid://iil1glro86vy" path="res://Arquivos/Scenes/Level2/resources/dialogue.tres" id="1_idnt0"]
+
+[node name="Opcoes" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_alb7e")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer2" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_idnt0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VBoxContainer2/PanelContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer/VBoxContainer2/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer2/PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+autowrap_mode = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VBoxContainer2/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button2" type="Button" parent="VBoxContainer/VBoxContainer2/PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+autowrap_mode = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/VBoxContainer2/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button3" type="Button" parent="VBoxContainer/VBoxContainer2/PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+autowrap_mode = 3
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer/VBoxContainer2/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="VBoxContainer/VBoxContainer2/PanelContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer2/PanelContainer/HBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer2/PanelContainer/HBoxContainer/Button3" to="." method="_on_button_3_pressed"]

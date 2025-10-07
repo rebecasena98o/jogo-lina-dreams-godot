@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=4 uid="uid://7ehsxmsma03a"]
+
+[ext_resource type="TileSet" uid="uid://ce8257msoe1gc" path="res://Arquivos/Scenes/Level2/resources/level_2_tileset.tres" id="1_8c45y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8c45y"]
+size = Vector2(49, 128)
+
+[node name="Pilar" type="AnimatableBody2D"]
+z_index = -1
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD+////AQAFAAMAAAD+/wAAAQAFAAQAAAD/////AQAGAAMAAAD//wAAAQAGAAQAAAAAAP//AQAHAAMAAAAAAAAAAQAHAAQAAAD+/wEAAQAFAAQAAAD//wEAAQAGAAQAAAAAAAEAAQAHAAQAAAD+/wIAAQAFAAQAAAD//wIAAQAGAAQAAAAAAAIAAQAHAAQAAAD+/wMAAQAFAAQAAAD//wMAAQAGAAQAAAAAAAMAAQAHAAQAAAD+/wQAAQAFAAQAAAD//wQAAQAGAAQAAAAAAAQAAQAHAAQAAAD+/wUAAQAFAAQAAAD//wUAAQAGAAQAAAAAAAUAAQAHAAQAAAD+/wYAAQAFAAQAAAD//wYAAQAGAAQAAAAAAAYAAQAHAAQAAAA=")
+tile_set = ExtResource("1_8c45y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-7.5, 48)
+shape = SubResource("RectangleShape2D_8c45y")

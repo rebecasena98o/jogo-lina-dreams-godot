@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cu1ove0tumwj2"]
+[gd_scene load_steps=6 format=3 uid="uid://c25xyp2blyrub"]
 
-[ext_resource type="Script" uid="uid://dd0ve33vitalw" path="res://Arquivos/Scripts/button.gd" id="1_xn6i0"]
-[ext_resource type="Texture2D" uid="uid://bw33hqaigbq7k" path="res://Arquivos/Assets/Sprites/Level2/buttom_pressed.png" id="2_4g8l2"]
-[ext_resource type="Texture2D" uid="uid://cdqsyi2lxajsx" path="res://Arquivos/Assets/Sprites/Level2/buttom.png" id="3_u7mxb"]
+[ext_resource type="Script" uid="uid://c0w53u57cdch8" path="res://Arquivos/Scripts/button_2.gd" id="1_mxoqy"]
+[ext_resource type="Texture2D" uid="uid://bw33hqaigbq7k" path="res://Arquivos/Assets/Sprites/Level2/buttom_pressed.png" id="2_1x32g"]
+[ext_resource type="Texture2D" uid="uid://cdqsyi2lxajsx" path="res://Arquivos/Assets/Sprites/Level2/buttom.png" id="3_eicov"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_64omd"]
 size = Vector2(16, 4)
@@ -11,7 +11,7 @@ size = Vector2(16, 4)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_4g8l2")
+"texture": ExtResource("2_1x32g")
 }],
 "loop": true,
 "name": &"pressed",
@@ -19,15 +19,15 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_u7mxb")
+"texture": ExtResource("3_eicov")
 }],
 "loop": true,
 "name": &"released",
 "speed": 5.0
 }]
 
-[node name="Button1" type="Area2D"]
-script = ExtResource("1_xn6i0")
+[node name="Button2" type="Area2D"]
+script = ExtResource("1_mxoqy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_64omd")
